@@ -15,9 +15,8 @@ const getApi = () => {
 getApi()
 
 const toggleCount = () => {
-  myFetch('count/646c5fc6ea61bcdd6cf3ae17', 'PATCH', { count: data.value.count + 1 }).then(() => {
-    data.value.count = data.value.count + 1
-  })
+  data.value.count = data.value.count + 1
+  myFetch('count/646c5fc6ea61bcdd6cf3ae17', 'PATCH', { count: data.value.count })
 }
 
 </script>
