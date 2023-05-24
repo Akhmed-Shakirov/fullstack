@@ -16,7 +16,7 @@ getApi()
 
 const toggleCount = () => {
   data.value.count = data.value.count + 1
-  myFetch('count/646c5fc6ea61bcdd6cf3ae17', 'PATCH', { count: data.value.count })
+  myFetch('count/646c5fc6ea61bcdd6cf3ae17', 'PUT', { count: data.value.count })
 }
 
 </script>
